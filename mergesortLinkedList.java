@@ -30,6 +30,7 @@ public class Solution {
         
         
     }
+
     public ListNode findmid(ListNode head) {
         if (head == null || head.next == null) {
             return head;
@@ -37,6 +38,7 @@ public class Solution {
         ListNode slow = head;
         ListNode fast = head.next;
         while(fast != null && fast.next !=null){
+            // debug 位置 是在 while判断
             slow = slow.next;
             fast = fast.next.next;
             
